@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My little game</title>
+    <link type="text/css" href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="main-div">
+            <h2>What is this?</h2>
+            <br>
+            <h3 id="random-sentences"></h3>
+
+            <div id="radios">
+                <label for="present-simple" class="material-icons">
+                  <input type="radio" name="mode" id="present-simple" value="present-simple" checked/>
+                  <span>Present Simple</span>
+                </label>                
+                <label for="present-continuous" class="material-icons">
+                  <input type="radio" name="mode" id="present-continuous" value="present-continuous" />
+                  <span>Present Continuous</span>
+                </label>
+                <label for="past-simple" class="material-icons">
+                  <input type="radio" name="mode" id="past-simple" value="past-simple" />
+                  <span>Past Simple</span>
+                </label>
+            </div>
+
+              <button name="check-button" id="check-button" onclick="checkAnswer(checkButton())">Відповісти</button>
+
+            <div>
+                <h3 id="right">Правильно: 0</h3>
+                <h3 id="not-right">Неправильно: 0</h3>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./index.js" type="text/javascript"></script>
